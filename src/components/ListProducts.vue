@@ -15,11 +15,11 @@ export default {
 
 <template>
   <main>
-    <h3>Lista Prodotti</h3>
+    <h2>--/> Content goes here</h2>
     <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
+      <li v-for="product in products">
+        {{ product.titolo }}
+      </li>
     </ul>
   </main>
 </template>

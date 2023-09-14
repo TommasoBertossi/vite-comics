@@ -79,7 +79,7 @@ header {
   @include space-evenly();
 
   ul {
-    margin: 0;
+    margin-top: 2rem;
     padding: 0;
     display: flex;
     gap: 2rem;
@@ -87,6 +87,11 @@ header {
     &li {
       display: inline-block;
       padding: 1rem;
+
+      &.active,
+      &:hover {
+        background-color: aliceblue;
+      }
     }
   }
 }
