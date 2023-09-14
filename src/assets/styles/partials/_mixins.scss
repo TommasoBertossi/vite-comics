@@ -1,0 +1,15 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  @include center();
+  color: red;
+}
+
+@mixin space-evenly() {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
