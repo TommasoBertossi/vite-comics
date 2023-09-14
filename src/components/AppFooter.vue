@@ -42,5 +42,6 @@ export default {
 <style lang="scss" scoped>
 footer {
   background-color: #303030;
+  background-image: url("/img/footer-bg.jpg");
 }
 </style>
