@@ -5,7 +5,7 @@ export default {
       products: [
         {
           src: "",
-          titolo: "testo",
+          titolo: "contenuto",
         },
       ],
     };
@@ -15,7 +15,7 @@ export default {
 
 <template>
   <main>
-    <h2>--/> Content goes here</h2>
+    <!-- <h2>--/> Content goes here</h2> -->
     <ul>
       <li v-for="product in products">
         {{ product.titolo }}
@@ -26,7 +26,11 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  background-color: #1c1c1c;
+  background-color: blue;
   color: white;
+
+  ul {
+    list-style-type: none;
+  }
 }
 </style>

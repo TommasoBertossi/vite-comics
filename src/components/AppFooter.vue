@@ -84,10 +84,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../src/assets/styles/partials/mixins" as *;
+
 footer {
   background-color: #303030;
   background-image: url("/img/footer-bg.jpg");
   color: white;
+
+  section.container {
+    @include center("vertically");
+
+    > .footer-col {
+      flex-grow: 1;
+    }
+  }
 }
-
-
+</style>

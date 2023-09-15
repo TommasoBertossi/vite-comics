@@ -63,7 +63,11 @@ export default {
   <header>
     <img src="/img/favicon.ico" alt="" />
     <ul>
-      <li v-for="link in links" :class="link.current ? 'active' : ''">
+      <li
+        v-for="(link, index) in links"
+        :key="index"
+        :class="link.current ? 'active' : ''"
+      >
         <a :href="link.url">
           {{ link.text }}
         </a>
@@ -102,5 +106,9 @@ header {
 a {
   text-decoration: none;
   color: black;
+}
+
+img {
+  width: 50px;
 }
 </style>
