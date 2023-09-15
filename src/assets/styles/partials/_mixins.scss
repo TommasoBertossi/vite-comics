@@ -1,7 +1,14 @@
-@mixin center() {
+@mixin center($type: "both") {
   display: flex;
-  justify-content: center;
-  align-items: center;
+
+  @if ($type == "orizontally") {
+    justify-content: center;
+  } @else if ($type == "vertically") {
+    align-items: center;
+  } @else if ($type == "both") {
+    justify-content: center;
+    align-items: center;
+  }
 }
 h1 {
   @include center();
@@ -12,4 +19,8 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+@mixin flex() {
+  display: flex;
 }

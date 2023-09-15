@@ -87,5 +87,7 @@ export default {
 footer {
   background-color: #303030;
   background-image: url("/img/footer-bg.jpg");
+  color: white;
 }
-</style>
+
+
